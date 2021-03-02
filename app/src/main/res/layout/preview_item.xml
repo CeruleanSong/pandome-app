@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+
+	<RelativeLayout
+		android:background="@drawable/simple_border"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:layout_margin="@dimen/margin_sm" >
+
+		<LinearLayout
+			android:background="@color/colorPrimaryDark"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_margin="@dimen/margin_sm" >
+
+			<TextView
+				android:id="@+id/file_name"
+				android:singleLine="true"
+				android:ellipsize="end"
+				android:textSize="@dimen/text_sm"
+				android:textAppearance="@style/TextAppearance.TitleDark"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="@dimen/padding_sm" />
+
+			<LinearLayout
+				android:background="@color/colorPrimaryDark"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal" >
+
+				<RelativeLayout
+					android:background="@drawable/simple_border"
+					android:layout_marginRight="@dimen/margin_xsm"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" >
+
+						<TextView
+							android:id="@+id/file_Type"
+							android:singleLine="true"
+							android:textAppearance="@style/TextAppearance.TextDark"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="@dimen/padding_sm" />
+
+				</RelativeLayout>
+
+				<RelativeLayout
+					android:background="@drawable/simple_border"
+					android:layout_marginRight="@dimen/margin_xsm"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" >
+
+					<TextView
+						android:id="@+id/file_size"
+						android:singleLine="true"
+						android:textAppearance="@style/TextAppearance.TextDark"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="@dimen/padding_sm" />
+
+				</RelativeLayout>
+
+				<RelativeLayout
+					android:background="@drawable/simple_border"
+					android:layout_marginRight="@dimen/margin_xsm"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" >
+
+					<TextView
+						android:id="@+id/file_protected"
+						android:singleLine="true"
+						android:textAppearance="@style/TextAppearance.TextDark"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="@dimen/padding_sm" />
+
+				</RelativeLayout>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+</LinearLayout>
